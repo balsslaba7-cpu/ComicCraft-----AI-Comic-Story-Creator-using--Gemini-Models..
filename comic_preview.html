@@ -1,0 +1,8 @@
+<h2>Your Comic Preview</h2>
+{% for panel in layout %}
+  <h3>{{panel.title}}</h3>
+  <img src="{{panel.image}}" width="200">
+  <p><i>{{panel.desc}}</i></p>
+  <p>{{panel.story}}</p>
+{% endfor %}
+<a href="/export-success">Download PDF</a>
