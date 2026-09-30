@@ -1,16 +1,15 @@
-# ComicCraft – AI Comic Story Creator Using Gemini Models
+# ComicCraft — AI Comic Story Creator Using Gemini Models
 
-## Template-format submission package
+## AI-ML-and-GEN-AI Track Submission Package
 
-This package reformats the supplied ComicCraft project into the folder/document structure of **AI-ML-and-GEN-AI-Track-Project-Template-main**.
+**Team ID:** SWTID-2026-4040  
+**Team Leader:** Bala Esakki R  
+**Team Members:** Sandhiya D, Rithikaa B, Anitha R, Anbuselvi  
+**Team Size:** 5
 
-### Team
-- Team Leader: Bala Esakki R
-- Team Members: Sandhiya, Anitha, Anbuselvi, Rithikaa
-- Team Size: 5
-- Team ID: Not provided
+This package follows the folder structure of the supplied `AI-ML-and-GEN-AI-Track-Project-Template-main` package and maps the uploaded ComicCraft project into those deliverables.
 
-### Included
+### Structure
 1. Brainstorming & Ideation
 2. Requirement Analysis
 3. Project Design Phase
@@ -19,11 +18,16 @@ This package reformats the supplied ComicCraft project into the folder/document 
 6. Project Testing
 7. Project Documentation
 8. Project Demonstration
-9. Project Source Code (original supplied project preserved)
 
-### Important source consistency note
-The supplied project report describes a **Streamlit + Google Gemini** implementation, while the supplied ZIP also contains **FastAPI/Diffusers-oriented prototype files** (for example `03_main.py`, `04_routes.py`, `05_gemini_flash.py`, `06_gemini_pro.py`, `07_image_generator.py`). Some imports in those files refer to modules that are not present in the supplied ZIP.
+The `ComicCraft Source` directory contains the original uploaded project.
 
-This package therefore preserves the source as received and documents the discrepancy rather than inventing a working state. Before final evaluation, reconcile the source code, README, requirements, and report so that they describe and execute the same implementation.
+### Verification notes
+The uploaded source uses FastAPI/Jinja2, Gemini 1.5 Flash, Gemini 1.5 Pro, Diffusers/Stable Diffusion and PyTorch. The source route references `app.exporters.save_pdf`, but an `exporters.py` file was not present in the supplied ZIP. The documents therefore do not claim that PDF export was verified.
 
-Generated on: 30 September 2026
+The source also has an import/package-layout mismatch: the numbered files are supplied under one directory while the Python modules import an `app.*` package. Align the package layout/imports before the final execution/demo.
+
+### Team
+- Team Leader: Bala Esakki R
+- Team Members: Sandhiya D, Rithikaa B, Anitha R, Anbuselvi
+- Team ID: SWTID-2026-4040
+- Team Size: 5
